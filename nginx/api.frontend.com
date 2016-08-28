@@ -1,6 +1,6 @@
 # HTTP server
 
-upstream sdk_api_backend {
+upstream frontend_backend {
   server 127.0.0.1:60000;
 }
 
@@ -16,8 +16,8 @@ server {
   gzip_vary on;
   gzip_disable "MSIE [1-6]\.(?!.*SV1)";
 
-  access_log      /data/log/nginx/api-stage-ibeacon-so-access.log;
-  error_log       /data/log/nginx/api-stage-ibeacon-so-error.log;
+  access_log      /data/log/nginx/frontend-access.log;
+  error_log       /data/log/nginx/frontend-error.log;
 
   keepalive_timeout    60;
   client_max_body_size    10m;
@@ -29,7 +29,7 @@ server {
   }
 
   location / {
-    proxy_pass  http://sdk_api_backend;
+    proxy_pass  http://frontend_backend;
 
     ### force timeouts if one of backend is died ##
     proxy_next_upstream error timeout invalid_header http_500 http_502 http_503 http_504;
