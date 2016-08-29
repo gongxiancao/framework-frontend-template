@@ -6,8 +6,6 @@ module.exports = framework
 .use('framework-env')
 .use('framework-config')
 .use('framework-model')
-.use('framework-seneca')
-.use('framework-seneca-client')
 .use('framework-service')
 .use('framework-controller')
 .use('framework-express')

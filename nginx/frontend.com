@@ -8,7 +8,7 @@ upstream frontend_backend {
 #
 server {
   listen      80;
-  server_name api.frontendtemplate.com;
+  server_name frontend.com;
 
   gzip on;
   gzip_proxied any;

@@ -20,15 +20,8 @@
     "framework-express-policy": "gongxiancao/framework-express-policy",
     "framework-express-route": "gongxiancao/framework-express-route",
     "framework-model": "gongxiancao/framework-model",
-    "framework-seneca": "gongxiancao/framework-seneca",
-    "framework-seneca-client": "gongxiancao/framework-seneca-client",
     "framework-service": "gongxiancao/framework-service",
-    "jwt-simple": "0.4.1",
-    "lodash": "4.5.0",
-    "oss-client": "^0.8.0",
-    "passport": "0.3.2",
-    "passport-http-bearer": "1.0.1",
-    "seneca-amqp-transport": "0.2.0"
+    "lodash": "4.5.0"
   },
   "devDependencies": {
     "del": "2.2.0",
@@ -37,14 +30,18 @@
     "gulp-cucumber": "0.0.17",
     "gulp-jshint": "2.0.0",
     "gulp-load-plugins": "1.2.0",
+    "gulp-protractor": "^3.0.0",
     "gulp-util": "3.0.7",
     "jshint": "2.9.1",
     "jshint-stylish": "2.1.0",
-    "mongodb": "^2.1.7",
+    "merge-stream": "^1.0.0",
     "node-uuid": "^1.4.7",
+    "open": "0.0.5",
     "request": "^2.69.0",
     "require-dir": "0.3.0",
+    "run-sequence": "^1.2.2",
     "should": "^8.2.2",
-    "through": "2.3.8"
+    "through": "2.3.8",
+    "wiredep": "^4.0.0"
   }
 }
