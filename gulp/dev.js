@@ -118,8 +118,8 @@ gulp.task('html2js', function () {
       var moduleDir = path.dirname(file.path);
 
       var moduleName = moduleDir.replace(path.join(file.cwd, file.base) + '/', '').replace('/', '.');
-      moduleName = moduleName.replace(/^app./, 'mlop.');
-      moduleName = moduleName.replace(/^components./, 'mlop.com.');
+      moduleName = moduleName.replace(/^app./, 'framework.');
+      moduleName = moduleName.replace(/^components./, 'framework.com.');
 
       var destPath = moduleDir.replace(path.join(file.cwd, file.base), gulpConfig.tmp.scriptRoot);
       return gulp.src(path.join(moduleDir, '/**/*.tpl.html'))
@@ -242,7 +242,7 @@ gulp.task('start:server', function () {
 });
 
 gulp.task('watch', function () {
-    plugins.livereload.listen({port: 32730});
+    plugins.livereload.listen({port: 35738});
 
     plugins.watch(gulpConfig.client.styles, function () {
       runSequence('less');

@@ -2,16 +2,20 @@
  *
 */
 'use strict';
-var jwt = require('jwt-simple');
 
-var ctrl = module.exports = {
-  find: function (req, res) {
-    User.find()
-      .then(function (users) {
-        res.json(users);
+module.exports = {
+  get: function (req, res) {
+    User.findOne({_id: req.userId})
+      .then(function (user) {
+        if(!user) {
+          return Promise.reject(new Errors.UserNotExistError());
+        }
+        delete user.password;
+        res.json(user.toJSON());
       })
       .catch(function (err) {
-        res.status(400).json({errcode: 1, errmsg: 'db error'});
+        logger.err(err);
+        res.error(new Errors.InernalError());
       });
   }
 };

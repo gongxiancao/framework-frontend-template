@@ -1,3 +1,4 @@
+'use strict';
 
 module.exports = {
   attributes: {
@@ -9,6 +10,9 @@ module.exports = {
         },
         message: '{VALUE} is not a valid username!'
       }
+    },
+    password: {
+      type: String
     }
   }
 };

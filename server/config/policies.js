@@ -1,6 +1,6 @@
 module.exports.policies = {
   '*': ['infra'],
-  // UserController: {
-  //   find: ['log']
-  // }
+  UserController: {
+    get: ['infra', 'auth']
+  }
 };

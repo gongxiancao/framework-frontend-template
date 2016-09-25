@@ -8,9 +8,9 @@ module.exports = {
           port: 27017
         }
       ],
-      database: 'frontendTemplateStaging',
-      username: 'frontendTemplateStagingUser',
-      password: 'AtmEyBaV',
+      database: 'frontendTemplate',
+      username: 'frontendTemplateUser',
+      password: 'bhagQGS7',
       options: {
         replicaSet: 'mlop',
         readPreference: 'nearest',
@@ -19,9 +19,8 @@ module.exports = {
       }
     }
   },
-
   auth: {
-    secret: '342847C8-36B3-487D-AC6E-494037ED7A79',
+    secret: 'DC3897A1-109D-4124-9B10-AA0512A82A27',
     tokenExpiresIn: 7200
   },
   serverUrl: 'http://localhost:60000',
