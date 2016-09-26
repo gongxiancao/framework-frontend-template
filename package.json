@@ -9,7 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "amqp-queue": "gongxiancao/amqp-queue",
     "async": "1.5.2",
     "bcryptjs": "2.3.0",
     "bluebird": "3.3.4",
