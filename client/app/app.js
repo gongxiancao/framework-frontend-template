@@ -2,7 +2,7 @@
 
 /* App Module */
 // angular.module('devOpsApp', ['ngResource', 'ngAnimate', 'ui.router']);
-angular.module('devOpsApp', [
+angular.module('framework', [
   'framework.com.auth',
   'framework.home',
   'framework.account',
