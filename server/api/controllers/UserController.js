@@ -14,8 +14,8 @@ module.exports = {
         res.json(user.toJSON());
       })
       .catch(function (err) {
-        logger.err(err);
-        res.error(new Errors.InernalError());
+        logger.error(err);
+        res.error(new Errors.InternalError());
       });
   }
 };
