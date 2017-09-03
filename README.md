@@ -1,4 +1,4 @@
-# Error Codes
+# Usage
 
 Before start for the first time, run:
 ```
